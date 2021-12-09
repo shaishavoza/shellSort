@@ -9,8 +9,8 @@ void printArray(int array[], int size)
 	}
 }
 
-// function for cool sort
-void coolSort(int array[], int n) 
+// function for shell sort
+void shellSort(int array[], int n) 
 {
   for(int stepSize = 5; stepSize > 0; stepSize = stepSize - 2) 
   {
@@ -42,8 +42,8 @@ int main()
   int array[] = {25,32,19,13,36,8,11,7,1};
   //int array[] = {31,23,45,7,12,54,67,2,98};
   int size = sizeof(array) / sizeof(array[0]);
-  coolSort(array, size);
-  printf("\ncoolSorted Array: \n");
+  shellSort(array, size);
+  printf("\nshellSorted Array: \n");
   printArray(array, size);
   printf("\n\n");
 }
